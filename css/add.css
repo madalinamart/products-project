@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+
+/* HEADER */
+
+.header {
+    background: #131313;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.header .logo {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    transition:all .3s ease;;
+}
+
+.header .logo:hover {
+    color: #FF4E50;
+    transition: all .3s ease;
+}
+
+.header .logo h1 , i {
+    font-size: 2rem;
+}
+
+
+.intro {
+    margin: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+}
+
+.intro button {
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.intro button:hover {
+    background: #131313;
+    color: #fff;
+}
+
+
+/* ADD */
+
+.add {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 500px;
+}
+
+.add p {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.add input, select, option {
+    padding: .5rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+/* CONTACTS */
+
+.contacts {
+    background: #131313;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacts .contact {
+    margin: 2rem;
+    color: #fff;
+}
+
+.contacts .contact h3 {
+    padding: .5rem;
+}
+
+.contacts .contact .contacts__links p{
+    font-size: .7rem;
+    line-height: 1rem;
+    transition: all .5s ease-in;
+    cursor: pointer;
+}
+
+.contacts .contact .contacts__links p:hover {
+    text-decoration: underline;
+    transition: all .5s ease-in;
+}
+
+
+/* FOOTER */
+footer {
+    background: #131313;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+footer p {
+    background: -webkit-linear-gradient(#F9D423, #FF4E50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 530px) {
+    
+
+    .intro h2 {
+        font-size: 80%;
+    }
+
+    .intro button {
+        padding: .2rem;
+        font-size: 70%;
+    }
+
+    .add {
+        width: 90%;
+    }
+
+    .add p {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .add input, select, option {
+        font-size: 70%;
+    }
+}
+
